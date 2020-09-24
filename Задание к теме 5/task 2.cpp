@@ -19,7 +19,7 @@ int main()
     setlocale(LC_ALL, "rus");
     float Ax, Ay, Bx, By, Cx, Cy;
 
-    // считываем координаты точке
+    // считываем координаты точек
     cout << "Введите координаты точки А: ";
     cin >> Ax >> Ay;
 
