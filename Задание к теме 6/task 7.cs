@@ -14,6 +14,6 @@ class Program
         b *= b; // A^10
         b *= c; // A^15
         
-        Console.WriteLine($"A^8 = {b}");
+        Console.WriteLine($"A^15 = {b}");
     }
 }
