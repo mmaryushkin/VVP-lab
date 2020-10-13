@@ -37,8 +37,8 @@ class Program
         int b2 = 4;
         int c2 = 5;
 
-        y = (c2*a1/a2 - c1)/(b2 - b1)
-        x = (c1 - b1*y) / a1
+        y = (c2*a1/a2 - c1)/(b2 - b1);
+        x = (c1 - b1*y) / a1;
 
         Console.WriteLine(x);
         Console.WriteLine(y);
