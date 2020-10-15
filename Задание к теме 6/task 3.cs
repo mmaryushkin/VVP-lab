@@ -1,31 +1,35 @@
 using System;
 using System.Threading;
 
-class Program
+namespace Project
 {
-    static void Main(string[] args)
+    internal class Program
     {
-        int A = 1;
-        int B = 2;
-        int C = 3;
+        private static void Main(string[] args)
+        {
+            int A = int.Parse(Console.ReadLine());
+            int B = int.Parse(Console.ReadLine());
+            int C = int.Parse(Console.ReadLine());
 
-        Console.WriteLine($"A = {A}");
-        Console.WriteLine($"B = {B}");
-        Console.WriteLine($"C = {C}\n");
-        /*------------------------------
-        A = C = 3
-        B = A = 1
-        C = B = 2
-        ------------------------------*/
-        int Z = A; // 1
-        A = C; // 3
-        C = B; // 2
-        B = Z; // 1
+            Console.WriteLine($"A = {A}");
+            Console.WriteLine($"B = {B}");
+            Console.WriteLine($"C = {C}\n");
+            /*----------------------------
+            A = B
+            B = C
+            C = A
+            ----------------------------*/
+            int Z = A;
+            A = B;
+            B = C;
+            C = Z;
 
-        Console.WriteLine("Перестановка...\n");
-        Thread.Sleep(3000);
-        Console.WriteLine($"A = {A}");
-        Console.WriteLine($"B = {B}");
-        Console.WriteLine($"C = {C}");
+            Console.WriteLine("Перестановка...\n");
+            Thread.Sleep(3000);
+
+            Console.WriteLine($"A = {A}");
+            Console.WriteLine($"B = {B}");
+            Console.WriteLine($"C = {C}");
+        }
     }
-} 
+}
