@@ -11,7 +11,7 @@ class Program
         Console.WriteLine($"Число одинаково читается слева направо и справа налево: {palindrom}");
     }
 
-    static double Reverse(int n)
+    static int Reverse(int n)
     {
         int r = 0;
         
