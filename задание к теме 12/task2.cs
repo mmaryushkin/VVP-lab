@@ -13,6 +13,9 @@ class Program
         Console.Write("Введите команду: ");
         int n = int.Parse(Console.ReadLine());
 
+        if (c == 0)
+            c = 4;
+
         Console.WriteLine(directions[(c + n) % 4]);
     }
 }
