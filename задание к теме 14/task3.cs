@@ -14,5 +14,6 @@ class Program
             k++;
         }
         Console.WriteLine(k);
+        Console.WriteLine(s + k);
     }
 }
